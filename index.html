@@ -139,10 +139,7 @@
 <i class="fa-solid fa-infinity text-emerald-600"></i>
 <span>평생 무료 스캔/생성</span>
 </div>
-<button class="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold rounded-xl shadow-sm transition flex items-center gap-1.5" id="qrProBtn" onclick="openQrProModal()">
-<i class="fa-solid fa-crown"></i>
-<span id="qrProBtnText">PRO 라이선스</span>
-</button>
+
 </div>
 </header>
 <!-- 안심 배지 바 -->
@@ -498,34 +495,7 @@
 <ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
-<!-- Lemon Squeezy PRO 라이선스 등록 모달 -->
-<div class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" id="qrProModal">
-<div class="bg-white w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-5">
-<div class="w-14 h-14 mx-auto rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl">
-<i class="fa-solid fa-crown"></i>
-</div>
-<div>
-<h3 class="text-xl font-black text-slate-900">PRO 평생 무광고 라이선스</h3>
-<p class="text-xs text-slate-500 mt-1">1회 결제로 모든 광고 영구 제거 및 클린 워크스페이스</p>
-</div>
-<div class="bg-amber-50/70 border border-amber-200/80 p-4 rounded-2xl text-left text-xs space-y-1.5 text-amber-900 font-medium">
-<p>✓ 구글 광고 영구 전면 차단</p>
-<p>✓ 1회 결제 ($2.99 / 약 3,900원, 정기구독 아님)</p>
-<p>✓ 최대 3대 기기(PC/태블릿/스마트폰) 영구 인증</p>
-</div>
-<div class="space-y-2">
-<input class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono text-center uppercase focus:ring-2 focus:ring-amber-500 outline-none" id="qrLicenseKeyInput" placeholder="라이선스 키 입력 (예: PRO-XXXX-XXXX)" type="text" aria-label="라이선스 키 입력 (예: PRO-XXXX-XXXX)" />
-<button class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition" id="btnVerifyQrLicense" onclick="verifyQrLicenseKey()" type="button">
-          라이선스 키 인증하기
-        </button>
-</div>
-<div class="pt-3 border-t border-slate-100 flex flex-col gap-2 text-xs">
-<a class="text-amber-600 font-bold hover:underline" href="https://lemonsqueezy.com" target="_blank" rel="noopener noreferrer">
-          👉 아직 키가 없으신가요? 평생 이용권 구매하기 ($2.99)
-        </a>
-<button class="text-slate-400 hover:text-slate-600" onclick="closeQrProModal()" type="button">닫기</button>
-</div>
-</div>
+
 </div>
 <!-- 전사 공통 원클릭 결과 복사 토스트 알림 컴포넌트 -->
 <div id="global-ux-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(10px);background:#0f172a;color:#fff;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.25);z-index:9999;transition:all 0.3s ease;opacity:0;pointer-events:none;">
@@ -747,8 +717,9 @@
       });
     }
 
-    function showToastNotification(msg) {
+        function showToastNotification(msg) {
       const toast = document.getElementById('global-ux-toast');
+      if (!toast) return;
       toast.textContent = msg;
       toast.style.opacity = '1';
       toast.style.transform = 'translateX(-50%) translateY(0)';
@@ -758,43 +729,8 @@
       }, 2300);
     }
 
-    // Lemon Squeezy PRO 라이선스 키 관리
-    function openQrProModal() {
-      document.getElementById('qrProModal').classList.remove('hidden');
-    }
-
-    function closeQrProModal() {
-      document.getElementById('qrProModal').classList.add('hidden');
-    }
-
-    function verifyQrLicenseKey() {
-      const input = document.getElementById('qrLicenseKeyInput').value.trim();
-      if (!input || input.length < 6) {
-        showToastNotification('유효한 라이선스 키를 입력해주세요 (예: PRO-XXXX-XXXX)');
-        return;
-      }
-
-      localStorage.setItem('qr_studio_pro_licensed', 'true');
-      localStorage.setItem('qr_studio_pro_key', input);
-      applyQrProStatus();
-      closeQrProModal();
-      showToastNotification('👑 PRO 라이선스가 성공적으로 활성화되었습니다! 모든 광고가 차단됩니다.');
-    }
-
-    function applyQrProStatus() {
-      const isPro = localStorage.getItem('qr_studio_pro_licensed') === 'true';
-      if (isPro) {
-        document.querySelectorAll('.manual-ad-box').forEach(el => el.style.display = 'none');
-        document.getElementById('qrProBtnText').textContent = '👑 PRO 회원';
-        const btn = document.getElementById('qrProBtn');
-        btn.classList.remove('from-amber-500', 'to-orange-500');
-        btn.classList.add('from-emerald-500', 'to-teal-600');
-      }
-    }
-
     document.addEventListener('DOMContentLoaded', () => {
-      applyQrProStatus();
-      renderQrCode();
+renderQrCode();
     });
   </script>
 </body>
