@@ -1,28 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>QR 스튜디오 | 광고·만료 없는 무료 고화질 QR 코드 생성기 & 카메라 스캐너 (QR Studio)</title>
-  <meta name="description" content="영구 만료 없는 무료 정적 QR 코드 생성 및 브라우저 즉시 카메라 스캐너. URL, 와이파이(Wi-Fi), 명함(vCard), 계좌번호 고화질 PNG/SVG 다운로드.">
-  <link rel="canonical" href="https://qr-studio.enjoy-onepage.com/">
-  
-  <meta property="og:title" content="QR 스튜디오 - 만료 없는 무료 QR 코드 생성기 & 스캐너">
-  <meta property="og:description" content="서버 전송 0바이트! 광고 지옥 없는 100% 무료 고화질 QR 코드 생성 및 스마트 스캔 도구입니다.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://qr-studio.enjoy-onepage.com/">
-  
-  <link rel="icon" href="favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- 로컬 fallback qrcode 엔진 -->
-  <script src="./qrcode.min.js"></script>
-
-  <!-- Google AdSense 비동기 로더 (No-Duplicate-Push 헌법 준수) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>QR 스튜디오 | 광고·만료 없는 무료 고화질 QR 코드 생성기 &amp; 카메라 스캐너 (QR Studio)</title>
+<meta content="영구 만료 없는 무료 정적 QR 코드 생성 및 브라우저 즉시 카메라 스캐너. URL, 와이파이(Wi-Fi), 명함(vCard), 계좌번호 고화질 PNG/SVG 다운로드." name="description"/>
+<link href="https://qr-studio.enjoy-onepage.com/" rel="canonical"/>
+<meta content="QR 스튜디오 - 만료 없는 무료 QR 코드 생성기 &amp; 스캐너" property="og:title"/>
+<meta content="서버 전송 0바이트! 광고 지옥 없는 100% 무료 고화질 QR 코드 생성 및 스마트 스캔 도구입니다." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://qr-studio.enjoy-onepage.com/" property="og:url"/>
+<link href="favicon.ico" rel="icon"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- 로컬 fallback qrcode 엔진 -->
+<script src="./qrcode.min.js"></script>
+<!-- Google AdSense 비동기 로더 (No-Duplicate-Push 헌법 준수) -->
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script>
+<style>
     .qr-tab-active { background-color: #0f172a; color: #ffffff; font-weight: 700; }
     .type-btn-active { border-color: #0f172a; background-color: #f1f5f9; color: #0f172a; font-weight: 700; }
   </style>
@@ -61,431 +57,372 @@
   }
 }
 </script>
-</head>
+<meta content="https://qr-studio.enjoy-onepage.com/og-image.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="QR 스튜디오 - 만료 없는 무료 QR 코드 생성기 &amp; 스캐너" name="twitter:title"/><meta content="서버 전송 0바이트! 광고 지옥 없는 100% 무료 고화질 QR 코드 생성 및 스마트 스캔 도구입니다." name="twitter:description"/><meta content="https://qr-studio.enjoy-onepage.com/og-image.png" name="twitter:image"/></head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
-
-  <!-- 상단 슬림 띠배너 (Top Slim Banner: 3824727725, 50~60px 고정) -->
-  <div class="manual-ad-box ad-top-banner w-full max-w-5xl mx-auto my-2 text-center overflow-hidden min-h-[50px] max-h-[60px]">
-    <ins class="adsbygoogle"
-         style="display:block; min-height:50px; max-height:60px;"
-         data-ad-client="ca-pub-2228289204702106"
-         data-ad-slot="3824727725"
-         data-ad-format="horizontal"
-         data-full-width-responsive="false"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <!-- 메인 래퍼 (Double-Nesting 금지, 루트 단일 컨테이너 선언) -->
-  <main class="w-full max-w-5xl mx-auto bg-white border border-slate-200/80 rounded-3xl shadow-xl overflow-hidden mb-8 flex-1">
-    
-    <!-- 네비게이션 헤더 & 프라이버시 배지 -->
-    <header class="border-b border-slate-100 px-6 py-6 sm:px-10 flex flex-col md:flex-row items-center justify-between gap-4 bg-gradient-to-b from-slate-50 to-white">
-      <div class="flex items-center gap-3.5 text-center md:text-left">
-        <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-2xl shadow-lg shadow-slate-300 shrink-0">
-          <i class="fa-solid fa-qrcode"></i>
-        </div>
-        <div>
-          <div class="flex items-center gap-2 justify-center md:justify-start">
-            <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">QR 스튜디오</h1>
-            <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">영구 만료 없음</span>
-          </div>
-          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">광고 지옥 없는 초고속 QR 생성 및 스마트 액션 스캐너</p>
-        </div>
-      </div>
-
-      <!-- 상단 액션 버튼 그룹 (PRO 모달 & 배지) -->
-      <div class="flex items-center gap-2.5">
-        <div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-          <i class="fa-solid fa-infinity text-emerald-600"></i>
-          <span>평생 무료 스캔/생성</span>
-        </div>
-        <button id="qrProBtn" onclick="openQrProModal()" class="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold rounded-xl shadow-sm transition flex items-center gap-1.5">
-          <i class="fa-solid fa-crown"></i>
-          <span id="qrProBtnText">PRO 라이선스</span>
-        </button>
-      </div>
-    </header>
-
-    <!-- 안심 배지 바 -->
-    <div class="bg-slate-100/70 border-b border-slate-200 px-6 py-2.5 text-xs text-slate-700 flex items-center justify-between flex-wrap gap-2">
-      <div class="flex items-center gap-2">
-        <i class="fa-solid fa-shield-halved text-emerald-600"></i>
-        <span><strong>100% 클라이언트 연산:</strong> 생성된 정적 QR 코드는 외부 서버를 거치지 않아 평생 유효하며 악성 사이트로 리다이렉트되지 않습니다.</span>
-      </div>
-      <a href="privacy.html" class="underline hover:text-slate-900 font-semibold text-[11px]">로컬 보증서 확인 →</a>
-    </div>
-
-    <!-- 기능 선택 메인 탭바 (생성 모드 vs 카메라 스캔 모드) -->
-    <div class="px-6 sm:px-10 pt-6">
-      <div class="grid grid-cols-2 gap-2 bg-slate-100 p-1.5 rounded-2xl text-xs font-bold">
-        <button type="button" id="tabBtnGenerate" onclick="switchMainTab('generate')" class="py-3 rounded-xl transition flex items-center justify-center gap-2 qr-tab-active">
-          <i class="fa-solid fa-wand-magic-sparkles"></i>
-          <span>QR 코드 만들기 (생성기)</span>
-        </button>
-        <button type="button" id="tabBtnScan" onclick="switchMainTab('scan')" class="py-3 rounded-xl transition flex items-center justify-center gap-2 text-slate-600 hover:bg-slate-200">
-          <i class="fa-solid fa-camera"></i>
-          <span>카메라 스마트 스캔</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- LOGIC START -->
-    <!-- PC 1:1 좌우 2단 대칭형 그리드 (lg:grid-cols-12 좌 6열 : 우 6열 sticky) -->
-    <div class="p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      
-      <!-- 좌측 6열: 콘텐츠 입력 및 설정 제어 패널 -->
-      <div class="lg:col-span-6 space-y-6">
-
-        <!-- [모드 1] QR 생성기 입력 폼 -->
-        <div id="panelGenerate" class="space-y-5">
-          <!-- QR 데이터 타입 탭 -->
-          <div class="grid grid-cols-4 gap-2 text-xs">
-            <button type="button" onclick="setQrType('url')" id="type-url" class="type-btn py-2 px-2 border rounded-xl type-btn-active text-center transition">
-              <i class="fa-solid fa-link block mb-0.5"></i>
-              <span>웹 링크</span>
-            </button>
-            <button type="button" onclick="setQrType('wifi')" id="type-wifi" class="type-btn py-2 px-2 border border-slate-200 rounded-xl text-center text-slate-600 hover:bg-slate-50 transition">
-              <i class="fa-solid fa-wifi block mb-0.5"></i>
-              <span>와이파이</span>
-            </button>
-            <button type="button" onclick="setQrType('vcard')" id="type-vcard" class="type-btn py-2 px-2 border border-slate-200 rounded-xl text-center text-slate-600 hover:bg-slate-50 transition">
-              <i class="fa-solid fa-address-card block mb-0.5"></i>
-              <span>명함 vCard</span>
-            </button>
-            <button type="button" onclick="setQrType('text')" id="type-text" class="type-btn py-2 px-2 border border-slate-200 rounded-xl text-center text-slate-600 hover:bg-slate-50 transition">
-              <i class="fa-solid fa-align-left block mb-0.5"></i>
-              <span>일반 텍스트</span>
-            </button>
-          </div>
-
-          <!-- URL 입력 필드 -->
-          <div id="formGroupUrl" class="space-y-1.5">
-            <label class="block text-xs font-bold text-slate-700">웹사이트 주소 (URL)</label>
-            <input type="url" id="inputUrl" placeholder="https://example.com" value="https://enjoy-onepage.com" oninput="renderQrCode()" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono outline-none focus:ring-2 focus:ring-slate-900"/>
-          </div>
-
-          <!-- Wi-Fi 입력 필드 -->
-          <div id="formGroupWifi" class="space-y-2 hidden">
-            <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">와이파이 네트워크 이름 (SSID)</label>
-              <input type="text" id="inputWifiSsid" placeholder="예: MyCafe_5G" oninput="renderQrCode()" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900"/>
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">비밀번호 (Password)</label>
-              <input type="text" id="inputWifiPass" placeholder="Wi-Fi 암호 입력" oninput="renderQrCode()" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900"/>
-            </div>
-          </div>
-
-          <!-- vCard 명함 입력 필드 -->
-          <div id="formGroupVcard" class="space-y-2 hidden">
-            <div class="grid grid-cols-2 gap-2">
-              <input type="text" id="inputVcardName" placeholder="성함 (예: 홍길동)" oninput="renderQrCode()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900"/>
-              <input type="tel" id="inputVcardPhone" placeholder="연락처 (010-XXXX-XXXX)" oninput="renderQrCode()" class="px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900"/>
-            </div>
-            <input type="email" id="inputVcardEmail" placeholder="이메일 주소" oninput="renderQrCode()" class="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900"/>
-          </div>
-
-          <!-- 일반 텍스트 입력 필드 -->
-          <div id="formGroupText" class="space-y-1.5 hidden">
-            <label class="block text-xs font-bold text-slate-700">텍스트 내용 또는 계좌번호</label>
-            <textarea id="inputText" rows="3" placeholder="스캔 시 복사할 텍스트를 입력하세요" oninput="renderQrCode()" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900"></textarea>
-          </div>
-
-          <!-- 디자인 & 색상 선택 -->
-          <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 space-y-3">
-            <div class="text-xs font-bold text-slate-800 flex items-center justify-between">
-              <span>QR 디자인 & 컬러</span>
-              <span class="text-[11px] text-slate-400">인쇄용 선명 대비</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="flex items-center gap-2 text-xs">
-                <span class="text-slate-500">코드 색상:</span>
-                <input type="color" id="qrDarkColor" value="#0f172a" onchange="renderQrCode()" class="w-8 h-8 rounded-lg cursor-pointer border border-slate-300"/>
-              </div>
-              <div class="flex items-center gap-2 text-xs">
-                <span class="text-slate-500">배경 색상:</span>
-                <input type="color" id="qrLightColor" value="#ffffff" onchange="renderQrCode()" class="w-8 h-8 rounded-lg cursor-pointer border border-slate-300"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- [모드 2] 카메라 스마트 스캐너 패널 -->
-        <div id="panelScan" class="space-y-4 hidden">
-          <div class="border-2 border-dashed border-slate-300 rounded-2xl overflow-hidden bg-black relative min-h-[260px] flex items-center justify-center">
-            <video id="scannerVideo" autoplay playsinline class="w-full max-h-[300px] object-contain hidden"></video>
-            
-            <div id="scanIdleOverlay" class="text-center p-6 space-y-3">
-              <div class="w-14 h-14 mx-auto rounded-full bg-slate-800 text-white flex items-center justify-center text-2xl">
-                <i class="fa-solid fa-camera"></i>
-              </div>
-              <p class="text-xs text-slate-300">카메라를 켜거나 이미지를 올려 QR을 스캔하세요</p>
-              <button type="button" onclick="startScannerCamera()" class="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold rounded-xl text-xs transition">
+<!-- 상단 슬림 띠배너 (Top Slim Banner: 3824727725, 50~60px 고정) -->
+<div class="manual-ad-box ad-top-banner w-full max-w-5xl mx-auto my-2 text-center overflow-hidden min-h-[50px] max-h-[60px]">
+<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="horizontal" data-ad-slot="3824727725" data-full-width-responsive="false" style="display:block; min-height:50px; max-height:60px;"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- 메인 래퍼 (Double-Nesting 금지, 루트 단일 컨테이너 선언) -->
+<main class="w-full max-w-5xl mx-auto bg-white border border-slate-200/80 rounded-3xl shadow-xl overflow-hidden mb-8 flex-1">
+<!-- 네비게이션 헤더 & 프라이버시 배지 -->
+<header class="border-b border-slate-100 px-6 py-6 sm:px-10 flex flex-col md:flex-row items-center justify-between gap-4 bg-gradient-to-b from-slate-50 to-white">
+<div class="flex items-center gap-3.5 text-center md:text-left">
+<div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-2xl shadow-lg shadow-slate-300 shrink-0">
+<i class="fa-solid fa-qrcode"></i>
+</div>
+<div>
+<div class="flex items-center gap-2 justify-center md:justify-start">
+<h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">QR 스튜디오</h1>
+<span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">영구 만료 없음</span>
+</div>
+<p class="text-xs sm:text-sm text-slate-500 mt-0.5">광고 지옥 없는 초고속 QR 생성 및 스마트 액션 스캐너</p>
+</div>
+</div>
+<!-- 상단 액션 버튼 그룹 (PRO 모달 & 배지) -->
+<div class="flex items-center gap-2.5">
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
+<i class="fa-solid fa-infinity text-emerald-600"></i>
+<span>평생 무료 스캔/생성</span>
+</div>
+<button class="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold rounded-xl shadow-sm transition flex items-center gap-1.5" id="qrProBtn" onclick="openQrProModal()">
+<i class="fa-solid fa-crown"></i>
+<span id="qrProBtnText">PRO 라이선스</span>
+</button>
+</div>
+</header>
+<!-- 안심 배지 바 -->
+<div class="bg-slate-100/70 border-b border-slate-200 px-6 py-2.5 text-xs text-slate-700 flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-shield-halved text-emerald-600"></i>
+<span><strong>100% 클라이언트 연산:</strong> 생성된 정적 QR 코드는 외부 서버를 거치지 않아 평생 유효하며 악성 사이트로 리다이렉트되지 않습니다.</span>
+</div>
+<a class="underline hover:text-slate-900 font-semibold text-[11px]" href="privacy.html">로컬 보증서 확인 →</a>
+</div>
+<!-- 기능 선택 메인 탭바 (생성 모드 vs 카메라 스캔 모드) -->
+<div class="px-6 sm:px-10 pt-6">
+<div class="grid grid-cols-2 gap-2 bg-slate-100 p-1.5 rounded-2xl text-xs font-bold">
+<button class="py-3 rounded-xl transition flex items-center justify-center gap-2 qr-tab-active" id="tabBtnGenerate" onclick="switchMainTab('generate')" type="button">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+<span>QR 코드 만들기 (생성기)</span>
+</button>
+<button class="py-3 rounded-xl transition flex items-center justify-center gap-2 text-slate-600 hover:bg-slate-200" id="tabBtnScan" onclick="switchMainTab('scan')" type="button">
+<i class="fa-solid fa-camera"></i>
+<span>카메라 스마트 스캔</span>
+</button>
+</div>
+</div>
+<!-- LOGIC START -->
+<!-- PC 1:1 좌우 2단 대칭형 그리드 (lg:grid-cols-12 좌 6열 : 우 6열 sticky) -->
+<div class="p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- 좌측 6열: 콘텐츠 입력 및 설정 제어 패널 -->
+<div class="lg:col-span-6 space-y-6">
+<!-- [모드 1] QR 생성기 입력 폼 -->
+<div class="space-y-5" id="panelGenerate">
+<!-- QR 데이터 타입 탭 -->
+<div class="grid grid-cols-4 gap-2 text-xs">
+<button class="type-btn py-2 px-2 border rounded-xl type-btn-active text-center transition" id="type-url" onclick="setQrType('url')" type="button">
+<i class="fa-solid fa-link block mb-0.5"></i>
+<span>웹 링크</span>
+</button>
+<button class="type-btn py-2 px-2 border border-slate-200 rounded-xl text-center text-slate-600 hover:bg-slate-50 transition" id="type-wifi" onclick="setQrType('wifi')" type="button">
+<i class="fa-solid fa-wifi block mb-0.5"></i>
+<span>와이파이</span>
+</button>
+<button class="type-btn py-2 px-2 border border-slate-200 rounded-xl text-center text-slate-600 hover:bg-slate-50 transition" id="type-vcard" onclick="setQrType('vcard')" type="button">
+<i class="fa-solid fa-address-card block mb-0.5"></i>
+<span>명함 vCard</span>
+</button>
+<button class="type-btn py-2 px-2 border border-slate-200 rounded-xl text-center text-slate-600 hover:bg-slate-50 transition" id="type-text" onclick="setQrType('text')" type="button">
+<i class="fa-solid fa-align-left block mb-0.5"></i>
+<span>일반 텍스트</span>
+</button>
+</div>
+<!-- URL 입력 필드 -->
+<div class="space-y-1.5" id="formGroupUrl">
+<label class="block text-xs font-bold text-slate-700">웹사이트 주소 (URL)</label>
+<input class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono outline-none focus:ring-2 focus:ring-slate-900" id="inputUrl" oninput="renderQrCode()" placeholder="https://example.com" type="url" value="https://enjoy-onepage.com"/>
+</div>
+<!-- Wi-Fi 입력 필드 -->
+<div class="space-y-2 hidden" id="formGroupWifi">
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">와이파이 네트워크 이름 (SSID)</label>
+<input class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900" id="inputWifiSsid" oninput="renderQrCode()" placeholder="예: MyCafe_5G" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">비밀번호 (Password)</label>
+<input class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900" id="inputWifiPass" oninput="renderQrCode()" placeholder="Wi-Fi 암호 입력" type="text"/>
+</div>
+</div>
+<!-- vCard 명함 입력 필드 -->
+<div class="space-y-2 hidden" id="formGroupVcard">
+<div class="grid grid-cols-2 gap-2">
+<input class="px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900" id="inputVcardName" oninput="renderQrCode()" placeholder="성함 (예: 홍길동)" type="text"/>
+<input class="px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900" id="inputVcardPhone" oninput="renderQrCode()" placeholder="연락처 (010-XXXX-XXXX)" type="tel"/>
+</div>
+<input class="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900" id="inputVcardEmail" oninput="renderQrCode()" placeholder="이메일 주소" type="email"/>
+</div>
+<!-- 일반 텍스트 입력 필드 -->
+<div class="space-y-1.5 hidden" id="formGroupText">
+<label class="block text-xs font-bold text-slate-700">텍스트 내용 또는 계좌번호</label>
+<textarea class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-slate-900" id="inputText" oninput="renderQrCode()" placeholder="스캔 시 복사할 텍스트를 입력하세요" rows="3"></textarea>
+</div>
+<!-- 디자인 & 색상 선택 -->
+<div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 space-y-3">
+<div class="text-xs font-bold text-slate-800 flex items-center justify-between">
+<span>QR 디자인 &amp; 컬러</span>
+<span class="text-[11px] text-slate-400">인쇄용 선명 대비</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 text-xs">
+<span class="text-slate-500">코드 색상:</span>
+<input class="w-8 h-8 rounded-lg cursor-pointer border border-slate-300" id="qrDarkColor" onchange="renderQrCode()" type="color" value="#0f172a"/>
+</div>
+<div class="flex items-center gap-2 text-xs">
+<span class="text-slate-500">배경 색상:</span>
+<input class="w-8 h-8 rounded-lg cursor-pointer border border-slate-300" id="qrLightColor" onchange="renderQrCode()" type="color" value="#ffffff"/>
+</div>
+</div>
+</div>
+</div>
+<!-- [모드 2] 카메라 스마트 스캐너 패널 -->
+<div class="space-y-4 hidden" id="panelScan">
+<div class="border-2 border-dashed border-slate-300 rounded-2xl overflow-hidden bg-black relative min-h-[260px] flex items-center justify-center">
+<video autoplay="" class="w-full max-h-[300px] object-contain hidden" id="scannerVideo" playsinline=""></video>
+<div class="text-center p-6 space-y-3" id="scanIdleOverlay">
+<div class="w-14 h-14 mx-auto rounded-full bg-slate-800 text-white flex items-center justify-center text-2xl">
+<i class="fa-solid fa-camera"></i>
+</div>
+<p class="text-xs text-slate-300">카메라를 켜거나 이미지를 올려 QR을 스캔하세요</p>
+<button class="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold rounded-xl text-xs transition" onclick="startScannerCamera()" type="button">
                 카메라 스캐너 켜기
               </button>
-            </div>
-
-            <!-- 스캔 뷰파인더 가이드라인 -->
-            <div id="scannerGuide" class="absolute inset-8 border-2 border-emerald-400 rounded-2xl pointer-events-none hidden animate-pulse"></div>
-          </div>
-
-          <!-- 이미지 파일로 스캔 -->
-          <div class="text-center">
-            <button type="button" onclick="document.getElementById('scanImageInput').click()" class="text-xs text-slate-600 hover:text-slate-900 underline font-medium">
+</div>
+<!-- 스캔 뷰파인더 가이드라인 -->
+<div class="absolute inset-8 border-2 border-emerald-400 rounded-2xl pointer-events-none hidden animate-pulse" id="scannerGuide"></div>
+</div>
+<!-- 이미지 파일로 스캔 -->
+<div class="text-center">
+<button class="text-xs text-slate-600 hover:text-slate-900 underline font-medium" onclick="document.getElementById('scanImageInput').click()" type="button">
               📁 앨범에 저장된 QR 이미지 스캔하기
             </button>
-            <input type="file" id="scanImageInput" accept="image/*" class="hidden" onchange="handleScanImageUpload(this.files)"/>
-          </div>
-
-          <!-- 스캔 결과 표시창 -->
-          <div id="scanResultBox" class="p-4 bg-emerald-50 rounded-2xl border border-emerald-200 text-xs space-y-2 hidden">
-            <div class="font-bold text-emerald-950 flex items-center gap-1.5">
-              <i class="fa-solid fa-circle-check text-emerald-600"></i>
-              <span>스캔 성공!</span>
-            </div>
-            <div id="scanResultContent" class="font-mono text-slate-800 break-all p-2 bg-white rounded-lg border border-emerald-100"></div>
-            <div class="flex gap-2 pt-1">
-              <button type="button" id="btnActionOpen" onclick="actionOpenUrl()" class="flex-1 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition hidden">
+<input accept="image/*" class="hidden" id="scanImageInput" onchange="handleScanImageUpload(this.files)" type="file"/>
+</div>
+<!-- 스캔 결과 표시창 -->
+<div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-200 text-xs space-y-2 hidden" id="scanResultBox">
+<div class="font-bold text-emerald-950 flex items-center gap-1.5">
+<i class="fa-solid fa-circle-check text-emerald-600"></i>
+<span>스캔 성공!</span>
+</div>
+<div class="font-mono text-slate-800 break-all p-2 bg-white rounded-lg border border-emerald-100" id="scanResultContent"></div>
+<div class="flex gap-2 pt-1">
+<button class="flex-1 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition hidden" id="btnActionOpen" onclick="actionOpenUrl()" type="button">
                 사이트 바로 방문
               </button>
-              <button type="button" onclick="actionCopyScanText()" class="flex-1 py-2 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-lg text-xs transition">
+<button class="flex-1 py-2 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-lg text-xs transition" onclick="actionCopyScanText()" type="button">
                 내용 복사
               </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- 우측 6열: 실시간 QR 프리뷰 및 다운로드 영수증 카드 (lg:sticky) -->
-      <div class="lg:col-span-6 lg:sticky lg:top-8 space-y-6">
-        
-        <!-- 실시간 명세 영수증 카드 -->
-        <div class="bg-slate-950 text-slate-100 rounded-3xl p-6 sm:p-7 shadow-2xl border border-slate-800">
-          
-          <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-            <div class="flex items-center gap-2">
-              <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-              <h2 class="font-bold text-sm text-slate-200 tracking-wide uppercase">
-                <span id="qrStatusTitle">실시간 QR 준비 완료</span>
-              </h2>
-            </div>
-            <div class="text-right font-mono text-xs text-slate-400">
-              <span id="qrProcessTime">0.0s</span>
-            </div>
-          </div>
-
-          <!-- QR 코드 프리뷰 캔버스 (중앙 고정) -->
-          <div class="my-6 p-6 bg-white rounded-2xl flex items-center justify-center shadow-inner border border-slate-200">
-            <canvas id="qrCanvas" width="240" height="240" class="max-w-full rounded-lg"></canvas>
-          </div>
-
-          <!-- 동적 작업 명세 영수증 -->
-          <div class="py-2 space-y-3 font-mono text-xs border-t border-slate-800">
-            <div class="flex justify-between text-slate-400">
-              <span>QR TYPE:</span>
-              <span class="text-white font-bold" id="receiptQrType">URL LINK</span>
-            </div>
-            <div class="flex justify-between text-slate-400">
-              <span>EXPIRATION:</span>
-              <span class="text-emerald-400 font-bold">평생 유효 (영구 무료)</span>
-            </div>
-            <div class="flex justify-between text-slate-400">
-              <span>REDIRECT RISK:</span>
-              <span class="text-cyan-400 font-bold">0% (직접 목적지 연결)</span>
-            </div>
-          </div>
-
-          <!-- 다운로드 버튼 그룹 -->
-          <div class="pt-5 border-t border-slate-800 space-y-2.5">
-            <a id="btnDownloadQrPng" href="#" download="qrcode.png" class="w-full py-4 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black rounded-2xl text-center shadow-lg shadow-emerald-950/40 transition flex items-center justify-center gap-2">
-              <i class="fa-solid fa-download"></i>
-              <span>고화질 QR PNG 다운로드</span>
-            </a>
-
-            <!-- 전사 공통 원클릭 결과 복사 & 바이럴 링크 -->
-            <button type="button" id="btnCopyResult" onclick="copyQrResult()" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2">
-              <i class="fa-solid fa-copy text-emerald-400"></i>
-              <span>QR 정보 및 바로가기 클립보드 복사</span>
-            </button>
-          </div>
-
-          <!-- 보안 확인 문구 -->
-          <div class="mt-4 text-center text-[10px] text-slate-500 font-mono">
+</div>
+</div>
+</div>
+</div>
+<!-- 우측 6열: 실시간 QR 프리뷰 및 다운로드 영수증 카드 (lg:sticky) -->
+<div class="lg:col-span-6 lg:sticky lg:top-8 space-y-6">
+<!-- 실시간 명세 영수증 카드 -->
+<div class="bg-slate-950 text-slate-100 rounded-3xl p-6 sm:p-7 shadow-2xl border border-slate-800">
+<div class="flex items-center justify-between border-b border-slate-800 pb-4">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
+<h2 class="font-bold text-sm text-slate-200 tracking-wide uppercase">
+<span id="qrStatusTitle">실시간 QR 준비 완료</span>
+</h2>
+</div>
+<div class="text-right font-mono text-xs text-slate-400">
+<span id="qrProcessTime">0.0s</span>
+</div>
+</div>
+<!-- QR 코드 프리뷰 캔버스 (중앙 고정) -->
+<div class="my-6 p-6 bg-white rounded-2xl flex items-center justify-center shadow-inner border border-slate-200">
+<canvas class="max-w-full rounded-lg" height="240" id="qrCanvas" width="240"></canvas>
+</div>
+<!-- 동적 작업 명세 영수증 -->
+<div class="py-2 space-y-3 font-mono text-xs border-t border-slate-800">
+<div class="flex justify-between text-slate-400">
+<span>QR TYPE:</span>
+<span class="text-white font-bold" id="receiptQrType">URL LINK</span>
+</div>
+<div class="flex justify-between text-slate-400">
+<span>EXPIRATION:</span>
+<span class="text-emerald-400 font-bold">평생 유효 (영구 무료)</span>
+</div>
+<div class="flex justify-between text-slate-400">
+<span>REDIRECT RISK:</span>
+<span class="text-cyan-400 font-bold">0% (직접 목적지 연결)</span>
+</div>
+</div>
+<!-- 다운로드 버튼 그룹 -->
+<div class="pt-5 border-t border-slate-800 space-y-2.5">
+<a class="w-full py-4 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black rounded-2xl text-center shadow-lg shadow-emerald-950/40 transition flex items-center justify-center gap-2" download="qrcode.png" href="#" id="btnDownloadQrPng">
+<i class="fa-solid fa-download"></i>
+<span>고화질 QR PNG 다운로드</span>
+</a>
+<!-- 전사 공통 원클릭 결과 복사 & 바이럴 링크 -->
+<button class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2" id="btnCopyResult" onclick="copyQrResult()" type="button">
+<i class="fa-solid fa-copy text-emerald-400"></i>
+<span>QR 정보 및 바로가기 클립보드 복사</span>
+</button>
+</div>
+<!-- 보안 확인 문구 -->
+<div class="mt-4 text-center text-[10px] text-slate-500 font-mono">
             100% IN-BROWSER VECTOR ENCODING · ZERO REDIRECT TRAPS
           </div>
-
-        </div>
-
-      </div>
-
-    </div>
-    <!-- LOGIC END -->
-
+</div>
+</div>
+</div>
+<!-- LOGIC END -->
 <!-- 📌 상세 가이드 & FAQ 아코디언 (Google E-E-A-T 및 실사용자 가이드라인 100% 충족) -->
 <section class="max-w-4xl mx-auto my-12 px-4">
-  <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
-    <div class="border-b border-slate-200 dark:border-slate-800 pb-5 mb-6">
-      <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
-        <span>📖</span> 커스텀 QR코드 생성 알고리즘 및 오류 복원율(ECC) 가이드
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
+<div class="border-b border-slate-200 dark:border-slate-800 pb-5 mb-6">
+<h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+<span>📖</span> 커스텀 QR코드 생성 알고리즘 및 오류 복원율(ECC) 가이드
       </h3>
-      <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">URL, 와이파이 자동연결, 연락처 QR코드 제작 및 리드 솔로몬(Reed-Solomon) 오류 정정 기준입니다.</p>
-    </div>
-
-    <!-- 공식 원리 & 핵심 기준 -->
-    <div class="mb-8">
-      <h4 class="text-xs font-black uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-1.5">
-        <span>⚖️</span> 핵심 산출 기준 및 법정 원리
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">URL, 와이파이 자동연결, 연락처 QR코드 제작 및 리드 솔로몬(Reed-Solomon) 오류 정정 기준입니다.</p>
+</div>
+<!-- 공식 원리 & 핵심 기준 -->
+<div class="mb-8">
+<h4 class="text-xs font-black uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-1.5">
+<span>⚖️</span> 핵심 산출 기준 및 법정 원리
       </h4>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-        
-        <div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
-          <h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span>리드 솔로몬(Reed-Solomon) 오류 복원
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
+<h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-blue-500"></span>리드 솔로몬(Reed-Solomon) 오류 복원
           </h4>
-          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">QR코드가 오염되거나 훼손되어도 최대 30%(H레벨)까지 스스로 데이터를 복구해 완벽하게 스캔되는 공학 원리입니다.</p>
-        </div>
-        <div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
-          <h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span>색상 대비율(Contrast Ratio) 준수
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">QR코드가 오염되거나 훼손되어도 최대 30%(H레벨)까지 스스로 데이터를 복구해 완벽하게 스캔되는 공학 원리입니다.</p>
+</div>
+<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
+<h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-blue-500"></span>색상 대비율(Contrast Ratio) 준수
           </h4>
-          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">스마트폰 카메라 센서가 신속히 인식할 수 있도록 배경과 코드 패턴 간의 명도 대비 4.5:1 이상을 엄격히 유지합니다.</p>
-        </div>
-        <div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
-          <h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span>영구 무료 및 스캔 수 무제한
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">스마트폰 카메라 센서가 신속히 인식할 수 있도록 배경과 코드 패턴 간의 명도 대비 4.5:1 이상을 엄격히 유지합니다.</p>
+</div>
+<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
+<h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-blue-500"></span>영구 무료 및 스캔 수 무제한
           </h4>
-          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">사설 마케팅 QR 사이트처럼 몇 주 뒤 접속이 차단되거나 유료 결제를 요구하지 않는 영구적인 정적(Static) QR입니다.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 자주 묻는 질문 (FAQ) -->
-    <div>
-      <h4 class="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-4 flex items-center gap-1.5">
-        <span>❓</span> 자주 묻는 질문 (FAQ)
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">사설 마케팅 QR 사이트처럼 몇 주 뒤 접속이 차단되거나 유료 결제를 요구하지 않는 영구적인 정적(Static) QR입니다.</p>
+</div>
+</div>
+</div>
+<!-- 자주 묻는 질문 (FAQ) -->
+<div>
+<h4 class="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-4 flex items-center gap-1.5">
+<span>❓</span> 자주 묻는 질문 (FAQ)
       </h4>
-      <div class="space-y-3">
-        
-        <div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
-          <h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 와이파이(Wi-Fi) 접속용 QR코드는 손님들이 비밀번호 없이 쓸 수 있나요?</h4>
-          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 네, 생성된 와이파이 QR을 카메라로 비추기만 하면 비밀번호를 직접 입력할 필요 없이 매장 와이파이에 즉시 자동 연결됩니다.</p>
-        </div>
-        <div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
-          <h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 생성된 QR코드가 나중에 만료되거나 유효기간이 지나면 어쩌죠?</h4>
-          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 본 도구는 중간 리다이렉트 서버를 거치지 않는 순수 정적 QR이므로 원본 링크가 살아있는 한 영구적으로 동작합니다.</p>
-        </div>
-        <div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
-          <h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 인쇄물(명함, 현수막)용 고해상도로 다운로드할 수 있나요?</h4>
-          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 인쇄 시 깨짐 없는 고해상도 PNG 이미지로 즉시 저장되며, 크기를 대형으로 확대해도 선명도가 유지됩니다.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="space-y-3">
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
+<h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 와이파이(Wi-Fi) 접속용 QR코드는 손님들이 비밀번호 없이 쓸 수 있나요?</h4>
+<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 네, 생성된 와이파이 QR을 카메라로 비추기만 하면 비밀번호를 직접 입력할 필요 없이 매장 와이파이에 즉시 자동 연결됩니다.</p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
+<h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 생성된 QR코드가 나중에 만료되거나 유효기간이 지나면 어쩌죠?</h4>
+<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 본 도구는 중간 리다이렉트 서버를 거치지 않는 순수 정적 QR이므로 원본 링크가 살아있는 한 영구적으로 동작합니다.</p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
+<h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 인쇄물(명함, 현수막)용 고해상도로 다운로드할 수 있나요?</h4>
+<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 인쇄 시 깨짐 없는 고해상도 PNG 이미지로 즉시 저장되며, 크기를 대형으로 확대해도 선명도가 유지됩니다.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- 🔗 연관 유틸리티 도구 추천 카드 (사용자 체류시간 증가 & SEO 내부 링크) -->
 <section class="max-w-4xl mx-auto my-8 px-4">
-  <div class="bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
-    <h3 class="text-base font-black text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-      <span>💡</span> 함께 많이 활용하는 필수 계산기 & 도구
+<div class="bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+<h3 class="text-base font-black text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span>💡</span> 함께 많이 활용하는 필수 계산기 &amp; 도구
     </h3>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
-      
-      <a href="https://bg-remover.enjoy-onepage.com/" class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group">
-        <div>
-          <div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-          <div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무료 사진 배경 제거기 (누끼따기)</div>
-        </div>
-        <span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-      </a>
-      <a href="https://convert-hub.enjoy-onepage.com/" class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group">
-        <div>
-          <div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-          <div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무제한 이미지 포맷 변환기</div>
-        </div>
-        <span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-      </a>
-      <a href="https://doc-scanner.enjoy-onepage.com/" class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group">
-        <div>
-          <div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-          <div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">모바일 웹 문서 스캐너</div>
-        </div>
-        <span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-      </a>
-    </div>
-  </div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://bg-remover.enjoy-onepage.com/">
+<div>
+<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
+<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무료 사진 배경 제거기 (누끼따기)</div>
+</div>
+<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
+</a>
+<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://convert-hub.enjoy-onepage.com/">
+<div>
+<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
+<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무제한 이미지 포맷 변환기</div>
+</div>
+<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
+</a>
+<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://doc-scanner.enjoy-onepage.com/">
+<div>
+<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
+<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">모바일 웹 문서 스캐너</div>
+</div>
+<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
+</a>
+</div>
+</div>
 </section>
-
-
-
-    <!-- E-E-A-T 서브페이지 네비게이션 링크 푸터 -->
-    <footer class="bg-slate-50 border-t border-slate-200 px-6 py-6 text-center text-xs text-slate-500">
-      <div class="max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-4 mb-3 font-medium">
-        <a href="about.html" class="hover:text-slate-900 transition">서비스 소개 & 기술 원리</a>
-        <span class="text-slate-300">·</span>
-        <a href="privacy.html" class="hover:text-slate-900 transition">개인정보처리방침 (로컬 보증서)</a>
-        <span class="text-slate-300">·</span>
-        <a href="terms.html" class="hover:text-slate-900 transition">이용약관</a>
-        <span class="text-slate-300">·</span>
-        <a href="sitemap.xml" class="hover:text-slate-900 transition">사이트맵</a>
-      </div>
-      <p>© 2026 QR Studio. All rights reserved. Zero-Upload Client-Side Architecture.</p>
-    </footer>
-
-  </main>
-
-  <!-- 하단 대형 배너 (푸터 직전: 3416334507, 1:1 푸시 규격) -->
-  <div class="manual-ad-box ad-bottom-banner w-full max-w-5xl mx-auto mb-8 text-center overflow-hidden">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2228289204702106"
-         data-ad-slot="3416334507"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <!-- Lemon Squeezy PRO 라이선스 등록 모달 -->
-  <div id="qrProModal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-    <div class="bg-white w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-5">
-      <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl">
-        <i class="fa-solid fa-crown"></i>
-      </div>
-      <div>
-        <h3 class="text-xl font-black text-slate-900">PRO 평생 무광고 라이선스</h3>
-        <p class="text-xs text-slate-500 mt-1">1회 결제로 모든 광고 영구 제거 및 클린 워크스페이스</p>
-      </div>
-
-      <div class="bg-amber-50/70 border border-amber-200/80 p-4 rounded-2xl text-left text-xs space-y-1.5 text-amber-900 font-medium">
-        <p>✓ 구글 광고 영구 전면 차단</p>
-        <p>✓ 1회 결제 ($2.99 / 약 3,900원, 정기구독 아님)</p>
-        <p>✓ 최대 3대 기기(PC/태블릿/스마트폰) 영구 인증</p>
-      </div>
-
-      <div class="space-y-2">
-        <input type="text" id="qrLicenseKeyInput" placeholder="라이선스 키 입력 (예: PRO-XXXX-XXXX)" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono text-center uppercase focus:ring-2 focus:ring-amber-500 outline-none"/>
-        <button type="button" id="btnVerifyQrLicense" onclick="verifyQrLicenseKey()" class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition">
+<!-- E-E-A-T 서브페이지 네비게이션 링크 푸터 -->
+<footer class="bg-slate-50 border-t border-slate-200 px-6 py-6 text-center text-xs text-slate-500">
+<div class="max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-4 mb-3 font-medium">
+<a class="hover:text-slate-900 transition" href="about.html">서비스 소개 &amp; 기술 원리</a>
+<span class="text-slate-300">·</span>
+<a class="hover:text-slate-900 transition" href="privacy.html">개인정보처리방침 (로컬 보증서)</a>
+<span class="text-slate-300">·</span>
+<a class="hover:text-slate-900 transition" href="terms.html">이용약관</a>
+<span class="text-slate-300">·</span>
+<a class="hover:text-slate-900 transition" href="sitemap.xml">사이트맵</a>
+</div>
+<p>© 2026 QR Studio. All rights reserved. Zero-Upload Client-Side Architecture.</p>
+</footer>
+</main>
+<!-- 하단 대형 배너 (푸터 직전: 3416334507, 1:1 푸시 규격) -->
+<div class="manual-ad-box ad-bottom-banner w-full max-w-5xl mx-auto mb-8 text-center overflow-hidden">
+<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- Lemon Squeezy PRO 라이선스 등록 모달 -->
+<div class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" id="qrProModal">
+<div class="bg-white w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-5">
+<div class="w-14 h-14 mx-auto rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl">
+<i class="fa-solid fa-crown"></i>
+</div>
+<div>
+<h3 class="text-xl font-black text-slate-900">PRO 평생 무광고 라이선스</h3>
+<p class="text-xs text-slate-500 mt-1">1회 결제로 모든 광고 영구 제거 및 클린 워크스페이스</p>
+</div>
+<div class="bg-amber-50/70 border border-amber-200/80 p-4 rounded-2xl text-left text-xs space-y-1.5 text-amber-900 font-medium">
+<p>✓ 구글 광고 영구 전면 차단</p>
+<p>✓ 1회 결제 ($2.99 / 약 3,900원, 정기구독 아님)</p>
+<p>✓ 최대 3대 기기(PC/태블릿/스마트폰) 영구 인증</p>
+</div>
+<div class="space-y-2">
+<input class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono text-center uppercase focus:ring-2 focus:ring-amber-500 outline-none" id="qrLicenseKeyInput" placeholder="라이선스 키 입력 (예: PRO-XXXX-XXXX)" type="text"/>
+<button class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition" id="btnVerifyQrLicense" onclick="verifyQrLicenseKey()" type="button">
           라이선스 키 인증하기
         </button>
-      </div>
-
-      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2 text-xs">
-        <a href="https://lemonsqueezy.com" target="_blank" class="text-amber-600 font-bold hover:underline">
+</div>
+<div class="pt-3 border-t border-slate-100 flex flex-col gap-2 text-xs">
+<a class="text-amber-600 font-bold hover:underline" href="https://lemonsqueezy.com" target="_blank">
           👉 아직 키가 없으신가요? 평생 이용권 구매하기 ($2.99)
         </a>
-        <button type="button" onclick="closeQrProModal()" class="text-slate-400 hover:text-slate-600">닫기</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 전사 공통 원클릭 결과 복사 토스트 알림 컴포넌트 -->
-  <div id="global-ux-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(10px);background:#0f172a;color:#fff;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.25);z-index:9999;transition:all 0.3s ease;opacity:0;pointer-events:none;">
+<button class="text-slate-400 hover:text-slate-600" onclick="closeQrProModal()" type="button">닫기</button>
+</div>
+</div>
+</div>
+<!-- 전사 공통 원클릭 결과 복사 토스트 알림 컴포넌트 -->
+<div id="global-ux-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(10px);background:#0f172a;color:#fff;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.25);z-index:9999;transition:all 0.3s ease;opacity:0;pointer-events:none;">
     알림 메시지
   </div>
-
-  <!-- 핵심 클라이언트 QR 생성 및 스캔 스크립트 -->
-  <script>
+<!-- 핵심 클라이언트 QR 생성 및 스캔 스크립트 -->
+<script>
     let currentMainTab = 'generate';
     let currentQrType = 'url';
     let lastScanText = '';
