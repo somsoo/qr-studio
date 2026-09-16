@@ -44,20 +44,56 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "QR 스튜디오 | 광고·만료 없는 무료 고화질 QR 코드 생성기 & 카메라 스캐너 (QR Studio)",
-  "url": "https://qr-studio.enjoy-onepage.com/",
-  "description": "영구 만료 없는 무료 정적 QR 코드 생성 및 브라우저 즉시 카메라 스캐너. URL, 와이파이(Wi-Fi), 명함(vCard), 계좌번호 고화질 PNG/SVG 다운로드.",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "All",
-  "browserRequirements": "Requires JavaScript. Requires HTML5.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "KRW"
-  }
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://qr-studio.enjoy-onepage.com/#webapp",
+      "name": "QR 스튜디오",
+      "url": "https://qr-studio.enjoy-onepage.com/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "영구 만료 없는 무료 정적 QR 코드 생성 및 브라우저 즉시 카메라 스캐너. URL, 와이파이(Wi-Fi), 명함(vCard), 계좌번호 고화질 PNG/SVG 다운로드.",
+      "image": "https://qr-studio.enjoy-onepage.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://qr-studio.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "와이파이(Wi-Fi) 접속용 QR코드는 손님들이 비밀번호 없이 쓸 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 생성된 와이파이 QR을 카메라로 비추기만 하면 비밀번호를 직접 입력할 필요 없이 매장 와이파이에 즉시 자동 연결됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "생성된 QR코드가 나중에 만료되거나 유효기간이 지나면 어쩌죠?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "본 도구는 중간 리다이렉트 서버를 거치지 않는 순수 정적 QR이므로 원본 링크가 살아있는 한 영구적으로 동작합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "인쇄물(명함, 현수막)용 고해상도로 다운로드할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "인쇄 시 깨짐 없는 고해상도 PNG 이미지로 즉시 저장되며, 크기를 대형으로 확대해도 선명도가 유지됩니다."
+          }
+        }
+      ]
+    }
+  ]
 }
-</script>
+  </script>
 <meta content="https://qr-studio.enjoy-onepage.com/og-image.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="QR 스튜디오 - 만료 없는 무료 QR 코드 생성기 &amp; 스캐너" name="twitter:title"/><meta content="서버 전송 0바이트! 광고 지옥 없는 100% 무료 고화질 QR 코드 생성 및 스마트 스캔 도구입니다." name="twitter:description"/><meta content="https://qr-studio.enjoy-onepage.com/og-image.png" name="twitter:image"/></head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 <!-- 상단 슬림 띠배너 (Top Slim Banner: 3824727725, 50~60px 고정) -->
