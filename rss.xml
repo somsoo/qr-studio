@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-  <title>QR 스튜디오 | 광고·만료 없는 무료 고화질 QR 코드 생성기 &amp; 카메라 스캐너 (QR Studio)</title>
-  <link>https://qr-studio.enjoy-onepage.com/</link>
-  <description>영구 만료 없는 무료 정적 QR 코드 생성 및 브라우저 즉시 카메라 스캐너. URL, 와이파이(Wi-Fi), 명함(vCard), 계좌번호 고화질 PNG/SVG 다운로드.</description>
-  <language>ko-kr</language>
-  <atom:link href="https://qr-studio.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Tue, 29 Sep 2026 06:01:00 +0000</lastBuildDate>
-  <item>
-    <title>이용약관 | QR 스튜디오</title>
-    <link>https://qr-studio.enjoy-onepage.com/terms.html</link>
-    <guid isPermaLink="true">https://qr-studio.enjoy-onepage.com/terms.html</guid>
-    <description>이용약관 | QR 스튜디오</description>
-    <pubDate>Mon, 14 Sep 2026 11:58:42 +0900</pubDate>
-  </item>
-  <item>
-    <title>서비스 소개 &amp; 안심 가이드 | QR 스튜디오</title>
-    <link>https://qr-studio.enjoy-onepage.com/about.html</link>
-    <guid isPermaLink="true">https://qr-studio.enjoy-onepage.com/about.html</guid>
-    <description>서비스 소개 &amp; 안심 가이드 | QR 스튜디오</description>
-    <pubDate>Mon, 14 Sep 2026 11:58:42 +0900</pubDate>
-  </item>
-  <item>
-    <title>개인정보처리방침 &amp; 로컬 연산 보증서 | QR 스튜디오</title>
-    <link>https://qr-studio.enjoy-onepage.com/privacy.html</link>
-    <guid isPermaLink="true">https://qr-studio.enjoy-onepage.com/privacy.html</guid>
-    <description>개인정보처리방침 &amp; 로컬 연산 보증서 | QR 스튜디오</description>
-    <pubDate>Mon, 14 Sep 2026 11:58:42 +0900</pubDate>
-  </item>
-</channel>
+  <channel>
+    <title>QR 스튜디오 | 만료 없는 무료 QR 코드 생성기·스캐너</title>
+    <link>https://qr-studio.enjoy-onepage.com/</link>
+    <description>만료 없는 무료 정적 QR 코드 생성기와 카메라 스캐너. URL·와이파이·명함(vCard)·계좌번호 QR을 PNG/SVG로 저장하세요.</description>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 01 Oct 2026 03:32:10 +0900</lastBuildDate>
+    <atom:link href="https://qr-studio.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QR 스튜디오 | 만료 없는 무료 QR 코드 생성기·스캐너</title>
+      <link>https://qr-studio.enjoy-onepage.com/</link>
+      <guid isPermaLink="true">https://qr-studio.enjoy-onepage.com/</guid>
+      <description>만료 없는 무료 정적 QR 코드 생성기와 카메라 스캐너. URL·와이파이·명함(vCard)·계좌번호 QR을 PNG/SVG로 저장하세요.</description>
+      <pubDate>Thu, 01 Oct 2026 03:32:10 +0900</pubDate>
+    </item>
+    <item>
+      <title>개인정보처리방침 &amp; 로컬 연산 보증서 | QR 스튜디오</title>
+      <link>https://qr-studio.enjoy-onepage.com/privacy.html</link>
+      <guid isPermaLink="true">https://qr-studio.enjoy-onepage.com/privacy.html</guid>
+      <description>개인정보처리방침 &amp; 로컬 연산 보증서 | QR 스튜디오</description>
+      <pubDate>Mon, 14 Sep 2026 11:58:42 +0900</pubDate>
+    </item>
+    <item>
+      <title>이용약관 | QR 스튜디오</title>
+      <link>https://qr-studio.enjoy-onepage.com/terms.html</link>
+      <guid isPermaLink="true">https://qr-studio.enjoy-onepage.com/terms.html</guid>
+      <description>이용약관 | QR 스튜디오</description>
+      <pubDate>Mon, 14 Sep 2026 11:58:42 +0900</pubDate>
+    </item>
+  </channel>
 </rss>
