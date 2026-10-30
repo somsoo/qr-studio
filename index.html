@@ -469,6 +469,9 @@
       </div>
 
 
+<!-- KIRO:TOPIC-LINKS START -->
+<section style="max-width:760px;margin:24px auto;padding:0 16px"><h2 style="font-size:1.1rem;font-weight:800;margin:0 0 8px">📌 자세한 안내</h2><a href="/wifi-qr.html" style="display:block;padding:10px 12px;margin:6px 0;border:1px solid #e2e8f0;border-radius:10px;background:#fff;color:#1e293b;font-weight:600;text-decoration:none">와이파이 QR코드 만들기: 카메라로 찍으면 바로 접속 →</a><a href="/qr-scan.html" style="display:block;padding:10px 12px;margin:6px 0;border:1px solid #e2e8f0;border-radius:10px;background:#fff;color:#1e293b;font-weight:600;text-decoration:none">QR코드 스캔하기: 카메라로, 또는 저장된 사진으로 →</a></section>
+<!-- KIRO:TOPIC-LINKS END -->
 <footer class="bg-slate-50 border-t border-slate-200 px-6 py-6 text-center text-xs text-slate-500">
 <div class="max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-4 mb-3 font-medium">
 <a class="hover:text-slate-900 transition" href="about.html">서비스 소개 &amp; 기술 원리</a>
@@ -837,5 +840,7 @@
 renderQrCode();
     });
   </script>
+<!-- KIRO:DEEPLINK -->
+<script>document.addEventListener('DOMContentLoaded',function(){var q=new URLSearchParams(location.search);if(q.get('tab')==='scan'&&typeof switchMainTab==='function'){switchMainTab('scan');}var ty=q.get('type');if(['wifi','vcard','text'].indexOf(ty)>-1&&typeof setQrType==='function'){setQrType(ty);if(typeof renderQrCode==='function'){renderQrCode();}}});</script>
 </body>
 </html>
